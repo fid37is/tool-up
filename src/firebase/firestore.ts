@@ -180,3 +180,5 @@ export const getUserDisputes = async (userId: string): Promise<DocumentData[]> =
         throw error;
     }
 };
+
+export { db };

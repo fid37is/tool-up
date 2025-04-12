@@ -29,6 +29,8 @@ export interface Product {
     specifications?: { [key: string]: string | number };
     brand?: string;
     warranty?: string;
+    oldPrice?: number;
+    isFeatured?: boolean;
     shipping?: {
         freeShipping: boolean;
         estimatedDelivery: string; // ISO date string or Firebase Timestamp.toDate().toISOString()
@@ -37,5 +39,6 @@ export interface Product {
 }
 
 export interface CartItem extends Product {
+    image: string | undefined;
     quantity: number;
 }

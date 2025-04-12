@@ -14,16 +14,16 @@ import OrderConfirmation from './pages/OrderConfirmation';
 import UserProfile from './pages/UserProfile';
 import UserSettings from './pages/UserSettings';
 import Disputes from './pages/Disputes';
-import Admin from './pages/Admin';
+// import Admin from './pages/Admin';
 
 // Auth components
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 
 // Admin components
-const Dashboard = lazy(() => import('./components/admin/Dashboard'));
-const ProductManagement = lazy(() => import('./components/admin/ProductManagement'));
-const OrderManagement = lazy(() => import('./components/admin/OrderManagement'));
+// const Dashboard = lazy(() => import('./components/admin/Dashboard'));
+// const ProductManagement = lazy(() => import('./components/admin/ProductManagement'));
+// const OrderManagement = lazy(() => import('./components/admin/OrderManagement'));
 
 // Auth guard component
 const ProtectedRoute = ({ children, requiredRole = 'user' }) => {
